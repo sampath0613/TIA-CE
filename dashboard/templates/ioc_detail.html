@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page" data-page="ioc-detail" data-ioc-value="{{ ioc_value }}">
+  <article class="panel">
+    <div class="detail-header">
+      <div>
+        <h2 id="iocValueHeading">IOC: {{ ioc_value }}</h2>
+        <p id="iocMetaLine">Loading IOC details...</p>
+      </div>
+      <div class="score-card">
+        <span class="score-label">Confidence</span>
+        <span class="score-value" id="iocScoreValue">--</span>
+        <span id="iocVerdictBadge" class="verdict-badge">unknown</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="panel">
+    <h3>Analyst Feedback</h3>
+    <div class="feedback-actions">
+      <button class="btn btn-positive" data-verdict="true_positive">Mark True Positive</button>
+      <button class="btn btn-negative" data-verdict="false_positive">Mark False Positive</button>
+    </div>
+    <p id="feedbackStatus" class="muted"></p>
+  </article>
+
+  <article class="panel panel-large">
+    <h3>Source Observation Timeline</h3>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Source</th>
+            <th>Last Seen</th>
+            <th>Raw Confidence</th>
+            <th>Tags</th>
+          </tr>
+        </thead>
+        <tbody id="timelineBody"></tbody>
+      </table>
+    </div>
+  </article>
+
+  <article class="panel panel-large">
+    <h3>Scoring Breakdown (Weight × Decay)</h3>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Source</th>
+            <th>Weight</th>
+            <th>Lambda</th>
+            <th>Decay</th>
+            <th>Contribution</th>
+          </tr>
+        </thead>
+        <tbody id="breakdownBody"></tbody>
+      </table>
+    </div>
+    <p class="muted" id="breakdownSummary"></p>
+  </article>
+</section>
+{% endblock %}

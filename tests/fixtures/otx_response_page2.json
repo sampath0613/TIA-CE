@@ -1,0 +1,16 @@
+{
+  "count": 2,
+  "next": null,
+  "previous": "https://otx.alienvault.com/api/v1/pulses/subscribed?page=1",
+  "results": [
+    {
+      "id": "pulse-2",
+      "name": "Campaign B",
+      "modified": "2026-03-30T08:00:00Z",
+      "indicators": [
+        {"indicator": "3f79bb7b435b05321651daefd374cd21b4f2f8f3", "type": "FileHash-SHA1"},
+        {"indicator": "203.0.113.18", "type": "IPv4"}
+      ]
+    }
+  ]
+}

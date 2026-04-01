@@ -1,0 +1,22 @@
+{
+  "count": 2,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "id": "pulse-1",
+      "name": "Sample Pulse",
+      "modified": "2026-03-30T10:00:00Z",
+      "indicators": [
+        {
+          "indicator": "203.0.113.10",
+          "type": "IPv4"
+        },
+        {
+          "indicator": "bad.example.org",
+          "type": "domain"
+        }
+      ]
+    }
+  ]
+}

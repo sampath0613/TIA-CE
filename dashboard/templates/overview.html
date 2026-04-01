@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page" data-page="overview">
+  <div class="panel-grid">
+    <article class="panel panel-large">
+      <div class="panel-title-row">
+        <h2>IOC Volume Over Time</h2>
+        <span class="panel-pill" id="refreshBadge">Auto-refresh every {{ refresh_seconds }}s</span>
+      </div>
+      <canvas id="volumeChart" height="120"></canvas>
+    </article>
+
+    <article class="panel panel-large">
+      <h2>Confidence Distribution</h2>
+      <canvas id="confidenceChart" height="120"></canvas>
+    </article>
+
+    <article class="panel panel-large">
+      <h2>Feed Quality Scorecard</h2>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Feed</th>
+              <th>Weight</th>
+              <th>Avg Confidence</th>
+              <th>FP Rate</th>
+              <th>Last Ingested</th>
+              <th>IOC Count</th>
+            </tr>
+          </thead>
+          <tbody id="feedQualityBody"></tbody>
+        </table>
+      </div>
+    </article>
+
+    <article class="panel panel-large">
+      <h2>Top 20 Highest-Confidence IOCs</h2>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>IOC</th>
+              <th>Type</th>
+              <th>Score</th>
+              <th>Verdict</th>
+              <th>Sources</th>
+            </tr>
+          </thead>
+          <tbody id="topIocBody"></tbody>
+        </table>
+      </div>
+    </article>
+  </div>
+</section>
+{% endblock %}

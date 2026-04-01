@@ -1,0 +1,17 @@
+{
+  "count": 2,
+  "next": "https://otx.alienvault.com/api/v1/pulses/subscribed?page=2",
+  "previous": null,
+  "results": [
+    {
+      "id": "pulse-1",
+      "name": "Campaign A",
+      "modified": "2026-03-31T08:00:00Z",
+      "indicators": [
+        {"indicator": "198.51.100.7", "type": "IPv4"},
+        {"indicator": "evil-domain.example", "type": "domain"},
+        {"indicator": "https://bad.example/dropper", "type": "URL"}
+      ]
+    }
+  ]
+}

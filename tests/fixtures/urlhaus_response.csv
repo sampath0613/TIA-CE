@@ -1,0 +1,4 @@
+id,dateadded,url,url_status,host,threat
+1001,2026-03-31 10:30:00,http://malicious.example/path,online,93.184.216.34,malware_download
+1002,2026-03-30 11:15:00,https://phishing.example/login,online,phishing.example,phishing
+1003,2026-03-29 05:00:00,http://offline.example/payload,offline,198.51.100.4,malware_download

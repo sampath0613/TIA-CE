@@ -1,0 +1,29 @@
+{
+  "query_status": "ok",
+  "urls": [
+    {
+      "id": "1001",
+      "dateadded": "2026-03-31 10:30:00",
+      "url": "http://malicious.example/path",
+      "url_status": "online",
+      "host": "93.184.216.34",
+      "threat": "malware_download"
+    },
+    {
+      "id": "1002",
+      "dateadded": "2026-03-30 11:15:00",
+      "url": "https://phishing.example/login",
+      "url_status": "online",
+      "host": "phishing.example",
+      "threat": "phishing"
+    },
+    {
+      "id": "1003",
+      "dateadded": "2026-03-29 05:00:00",
+      "url": "http://offline.example/payload",
+      "url_status": "offline",
+      "host": "198.51.100.4",
+      "threat": "malware_download"
+    }
+  ]
+}
