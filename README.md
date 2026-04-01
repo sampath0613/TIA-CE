@@ -135,5 +135,3 @@ SOAR Playbooks & Dashboard UI
 1. Connect to real SOAR platform (Palo Alto Cortex XSOAR, Google SecOps, Splunk)
 2. Add more threat feeds (abuse.ch URLhaus variants, custom internal feeds)
 3. Implement false-positive feedback from analyst actions (auto-rate-limit sources with high FP %)
-4. Deploy with WAF + API key rotation
-5. Add Prometheus metrics for SOC dashboard visibility
